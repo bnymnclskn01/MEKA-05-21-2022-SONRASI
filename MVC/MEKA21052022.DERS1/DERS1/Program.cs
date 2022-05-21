@@ -26,12 +26,30 @@ namespace DERS1
              */
             #endregion
             #region Örnek 1
-            Ornek ornek = new Ornek();
-            Console.WriteLine("Lütfen Bir Sayı Giriniz : ");
-            sbyte sayi = Convert.ToSByte(Console.ReadLine());
-            ornek.NegativandPozitif(sayi);
-            Console.ReadKey();
+            //Ornek ornek = new Ornek();
+            //Console.WriteLine("Lütfen Bir Sayı Giriniz : ");
+            //sbyte sayi = Convert.ToSByte(Console.ReadLine());
+            //ornek.NegativandPozitif(sayi);
             #endregion
+            #region Örnek 2
+            MatematikselSinif matematikselSinif = new MatematikselSinif();
+            Console.Write("Birinci Sayiyi Giriniz : ");
+            float sayi1 = float.Parse(Console.ReadLine());
+            Console.Write("İkinci Sayiyi Giriniz : ");
+            float sayi2 = float.Parse(Console.ReadLine());
+            matematikselSinif.MatematikIslemleri(sayi1, sayi2);
+            Console.WriteLine();
+            matematikselSinif.MatematikIslemleri2(sayi1, sayi2);
+            Console.WriteLine();
+            matematikselSinif.Topla(sayi1, sayi2);
+            Console.WriteLine();
+            matematikselSinif.Cikarma(sayi1, sayi2);
+            Console.WriteLine();
+            matematikselSinif.Carpma(sayi1, sayi2);
+            Console.WriteLine();
+            matematikselSinif.Bolme(sayi1, sayi2);
+            #endregion
+            Console.ReadKey();
         }
     }
 }
