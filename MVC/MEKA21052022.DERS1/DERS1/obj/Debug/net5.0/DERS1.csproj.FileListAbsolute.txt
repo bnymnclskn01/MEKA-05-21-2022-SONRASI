@@ -3,7 +3,6 @@ C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\MVC\MEKA21052022.DERS1\DERS
 C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\MVC\MEKA21052022.DERS1\DERS1\bin\Debug\net5.0\DERS1.runtimeconfig.json
 C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\MVC\MEKA21052022.DERS1\DERS1\bin\Debug\net5.0\DERS1.runtimeconfig.dev.json
 C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\MVC\MEKA21052022.DERS1\DERS1\bin\Debug\net5.0\DERS1.dll
-C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\MVC\MEKA21052022.DERS1\DERS1\bin\Debug\net5.0\ref\DERS1.dll
 C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\MVC\MEKA21052022.DERS1\DERS1\bin\Debug\net5.0\DERS1.pdb
 C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\MVC\MEKA21052022.DERS1\DERS1\obj\Debug\net5.0\DERS1.csproj.AssemblyReference.cache
 C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\MVC\MEKA21052022.DERS1\DERS1\obj\Debug\net5.0\DERS1.GeneratedMSBuildEditorConfig.editorconfig
@@ -14,3 +13,4 @@ C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\MVC\MEKA21052022.DERS1\DERS
 C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\MVC\MEKA21052022.DERS1\DERS1\obj\Debug\net5.0\ref\DERS1.dll
 C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\MVC\MEKA21052022.DERS1\DERS1\obj\Debug\net5.0\DERS1.pdb
 C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\MVC\MEKA21052022.DERS1\DERS1\obj\Debug\net5.0\DERS1.genruntimeconfig.cache
+C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\MVC\MEKA21052022.DERS1\DERS1\obj\Debug\net5.0\refint\DERS1.dll
