@@ -1,4 +1,6 @@
 ﻿using DERS1.CheckEquality;
+using DERS1.Interface.ClassMetot;
+using DERS1.Interface.Manager;
 using DERS1.Kalitim;
 using DERS1.Ornekler;
 using System;
@@ -119,7 +121,94 @@ namespace DERS1
             //Console.Write("İkinci Değeri Giriniz : ");
             //string deger2=Console.ReadLine();
             #endregion
+
+            #region Sözel Anlatım
+            /*
+             For, Foreach, While, Do While
+            Yapılan döngüsel işlemlerin hepsinde Şartlı ve Şartsız Döngüler
+            Kendini Tekrarlayan döngüler ve Kendini Yenileyen döngüler.
+             if else switch case koşullarda da geçerlidir.
+            Şartlı Koşul vardır.
+            Bir işlem elimizde bu işlemi yapabilmemiz için bize iki farklı çıktı
+            ve veya iki aynı çıktının benzerlerini işleme almamız için zorunlu kılınan özelliklerdir.
+            if(puan>350) // Olumlu
+            {
+            bla bla
+            }
+            else // Olumsuz Çıktı
+            {
+            bla bla 
+            }
+            Ben işe gidiyorum  Ben otobüsle gidebilirim minibüslede
+            her iki ulaşım aracının kullandığı güzergah aynı güzergah
+            ve bu güzergah trafik yoğunluğu ile gidiş yapılacak
+            if(otobus) // Olumsuz 
+            { 
+                otobusle işe giidiyorum
+            }
+            else // Olumsuz çıktı.
+            {
+                minibüsle işe gidiyorum
+            }
+
+             */
+            //Console.WriteLine("Lütfen yemeğiniz seçiniz : Bamya ise B'ye Ispanak ise I'ya basınız : ");
+            //string yemek = Console.ReadLine();
+            //if (yemek.ToUpper().ToLower() == "B") // Olumsuz Ama zorunlu
+            //{
+            //    Console.WriteLine("seçtiğiniz yemek Bamya afiyet olsun");
+            //}
+            //else if (yemek.ToUpper().ToLower() == "I") // Olumsuz ama zorunlu
+            //{
+            //    Console.WriteLine("seçtiğiniz yemek Ispanak afiyet olsun");
+            //}
+            //else // Zorunlu koşulda işlem yapılmıyor. Olumsuz.
+            //{
+            //    Console.Write("Yaptığınız işlem başarısız.");
+            //}
+            //switch (yemek.ToLower().ToUpper())
+            //{
+            //    case "B":
+            //        Console.WriteLine("seçtiğiniz yemek Bamya afiyet olsun");
+            //        break;
+            //    case "I":
+            //        Console.WriteLine("seçtiğiniz yemek Ispanak afiyet olsun");
+            //        break ;
+            //    default:
+            //        Console.Write("Yaptığınız işlem başarısız.");
+            //        break;
+            //}
+            //
+            /*
+             
+             */
+            #endregion
+            #region Interface Örneği
+            string mark = new string('-', 6);
+            int value;
+            DatabaseManager database;
+            Console.Write("[1]\n<--Oracle -->\n[2]<-- MySql -->\n[3]\nMSSQL \n{0}", mark);
+            value = Convert.ToInt32(Console.ReadLine());
+            switch (value)
+            {
+                case 1:
+                    database = new DatabaseManager(new OracleDatabaseManager());
+                    database.LoginDB();
+                    break;
+                case 2:
+                    database = new DatabaseManager(new MySqlDatabaseManager());
+                    database.LoginDB();
+                    break;
+                case 3:
+                    database = new DatabaseManager(new MsSqlDatabaseManager());
+                    database.LoginDB();
+                    break;
+                default:
+                    Console.Write(mark);
+                    break;
+            }
             Console.ReadKey();
+            #endregion
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DERS1.Kalitim
 {
-    public class Sporcu
+    public class Sporcu // Baba
     {
         private string name;
         private string surname;
