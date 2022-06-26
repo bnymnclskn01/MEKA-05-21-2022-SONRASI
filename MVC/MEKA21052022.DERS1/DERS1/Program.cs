@@ -184,31 +184,40 @@ namespace DERS1
              */
             #endregion
             #region Interface Örneği
-            string mark = new string('-', 6);
-            int value;
-            DatabaseManager database;
-            Console.Write("[1]\n<--Oracle -->\n[2]<-- MySql -->\n[3]\nMSSQL \n{0}", mark);
-            value = Convert.ToInt32(Console.ReadLine());
-            switch (value)
-            {
-                case 1:
-                    database = new DatabaseManager(new OracleDatabaseManager());
-                    database.LoginDB();
-                    break;
-                case 2:
-                    database = new DatabaseManager(new MySqlDatabaseManager());
-                    database.LoginDB();
-                    break;
-                case 3:
-                    database = new DatabaseManager(new MsSqlDatabaseManager());
-                    database.LoginDB();
-                    break;
-                default:
-                    Console.Write(mark);
-                    break;
-            }
-            Console.ReadKey();
+            //string mark = new string('-', 6);
+            //int value;
+            //DatabaseManager database;
+            //Console.Write("[1]\n<--Oracle -->\n[2]<-- MySql -->\n[3]\nMSSQL \n{0}", mark);
+            //value = Convert.ToInt32(Console.ReadLine());
+            //switch (value)
+            //{
+            //    case 1:
+            //        database = new DatabaseManager(new OracleDatabaseManager());
+            //        database.LoginDB();
+            //        break;
+            //    case 2:
+            //        database = new DatabaseManager(new MySqlDatabaseManager());
+            //        database.LoginDB();
+            //        break;
+            //    case 3:
+            //        database = new DatabaseManager(new MsSqlDatabaseManager());
+            //        database.LoginDB();
+            //        break;
+            //    default:
+            //        Console.Write(mark);
+            //        break;
+            //}
             #endregion
+            string code = "";
+            Random rnd = new Random();
+            code = "KIO";
+            for (int i = 0; i < 11; i++)
+            {
+                char tmp = Convert.ToChar(rnd.Next(48, 58));
+                code += tmp;
+            }
+            Console.WriteLine(code);
+            Console.ReadKey();
         }
     }
 }
