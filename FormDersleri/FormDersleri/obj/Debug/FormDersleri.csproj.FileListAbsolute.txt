@@ -1,0 +1,12 @@
+C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\FormDersleri\FormDersleri\bin\Debug\FormDersleri.exe.config
+C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\FormDersleri\FormDersleri\bin\Debug\FormDersleri.exe
+C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\FormDersleri\FormDersleri\bin\Debug\FormDersleri.pdb
+C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\FormDersleri\FormDersleri\obj\Debug\FormDersleri.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\FormDersleri\FormDersleri\obj\Debug\FormDersleri.OneApp.resources
+C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\FormDersleri\FormDersleri\obj\Debug\FormDersleri.Properties.Resources.resources
+C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\FormDersleri\FormDersleri\obj\Debug\FormDersleri.csproj.GenerateResource.cache
+C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\FormDersleri\FormDersleri\obj\Debug\FormDersleri.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\FormDersleri\FormDersleri\obj\Debug\FormDersleri.exe
+C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\FormDersleri\FormDersleri\obj\Debug\FormDersleri.pdb
+C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\FormDersleri\FormDersleri\obj\Debug\FormDersleri.AddUser.resources
+C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\FormDersleri\FormDersleri\obj\Debug\FormDersleri.BurakKingChrome.resources
