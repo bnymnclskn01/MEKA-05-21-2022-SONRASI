@@ -41,4 +41,21 @@ BookType nvarchar(70)
 )
 insert into UserMember (Name,Surname,Email,UPassword,UserAddress) values('Ömer','Polat','omer.polat@gmail.com','123456','Gaziosmanpaşa')
 Update UserMember Set UserAddress='Beyoğlu' where UserAddress='Gaziosmanpaşa'
-Delete From UserMember Where UserAddress='Bahçelievler'*/
+Delete From UserMember Where UserAddress='Bahçelievler'
+Select TOP 5 Name,Surname From UserMember ORDER BY ID DESC*/
+/*Select Name,Surname From UserMember Where UserAddress LIKE '%i%' İçinde i geçen bütün adresleri alıyor*/
+/*Select Name,Surname From UserMember Where UserAddress LIKE '%i%' İ harfiyle başlayan adrese göre listeleme yapıyor*/
+/*Select * From UserMember where Name LIKE 'Berka_' Son harfine bakmaksızın bütün benzer kayıtları getirir.*/
+/*Select * From UserMember Where Name LIKE '[B,D]%' B ve D harfiyle başlayan kayıtları listeler*/
+/*Select * From UserMember Where Name LIKE '[A-Z]%' A-Z ARASINDA BAŞLAYAN BÜTÜN İSİMLERİ GETİRİR*/
+/*SELECT * FROM UserMember WHERE UserAddress IN('Bakırköy','Nilüfer') Bakırköy ve Nilüfer  içinde barındıran kayıtları listeler*/
+/*Select * From UserMember Where Age Between 20 and 24 Yaş maaş fiyat aralıklı listeleme yapma için kullanılır*/
+/*Select Name AS İsim, Surname AS Soyadı From UserMember*/
+/*Select Name,Surname,BooksName, AuthorName From UserMember JOIN Books ON UserMember.ID=Books.UserID Order By Name ASC */
+/*Select Name,Surname,BooksName, AuthorName From UserMember LEFT JOIN Books ON UserMember.ID=Books.UserID Order By Name ASC
+Select Name,Surname,BooksName, AuthorName From UserMember RIGHT JOIN Books ON UserMember.ID=Books.UserID Order By Name ASC*/
+/*Select * From UserMember INNER JOIN Books ON UserMember.ID=Books.UserID*/
+/*Select * From UserMember FULL JOIN Books ON UserMember.ID=Books.UserID*/
+/*Select Name,Surname,Email,UPassword INTO BackupUserMember From UserMember*/
+/*insert into BackupUserMember Select * From UserMember*/
+/*Create Database Meka*/
