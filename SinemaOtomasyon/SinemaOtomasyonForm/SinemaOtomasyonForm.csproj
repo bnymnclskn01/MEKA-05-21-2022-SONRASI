@@ -67,6 +67,12 @@
     <Compile Include="frmGenel.Designer.cs">
       <DependentUpon>frmGenel.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSalonlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalonlar.Designer.cs">
+      <DependentUpon>frmSalonlar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmFilmler.resx">
@@ -74,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGenel.resx">
       <DependentUpon>frmGenel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalonlar.resx">
+      <DependentUpon>frmSalonlar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

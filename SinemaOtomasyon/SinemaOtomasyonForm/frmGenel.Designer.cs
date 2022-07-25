@@ -39,7 +39,7 @@ namespace SinemaOtomasyonForm
             this.btnRezervasyonYap = new System.Windows.Forms.Button();
             this.btnYeniFilmEkle = new System.Windows.Forms.Button();
             this.btnCikisYap = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnYeniSalonEkle = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cbFilm
@@ -158,17 +158,18 @@ namespace SinemaOtomasyonForm
             this.btnCikisYap.UseVisualStyleBackColor = false;
             this.btnCikisYap.Click += new System.EventHandler(this.btnCikisYap_Click);
             // 
-            // button1
+            // btnYeniSalonEkle
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(406, 397);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(243, 40);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Yeni Salon Ekle";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnYeniSalonEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnYeniSalonEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYeniSalonEkle.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnYeniSalonEkle.Location = new System.Drawing.Point(406, 397);
+            this.btnYeniSalonEkle.Name = "btnYeniSalonEkle";
+            this.btnYeniSalonEkle.Size = new System.Drawing.Size(243, 40);
+            this.btnYeniSalonEkle.TabIndex = 9;
+            this.btnYeniSalonEkle.Text = "Yeni Salon Ekle";
+            this.btnYeniSalonEkle.UseVisualStyleBackColor = false;
+            this.btnYeniSalonEkle.Click += new System.EventHandler(this.btnYeniSalonEkle_Click);
             // 
             // frmGenel
             // 
@@ -177,7 +178,7 @@ namespace SinemaOtomasyonForm
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1488, 723);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnYeniSalonEkle);
             this.Controls.Add(this.btnCikisYap);
             this.Controls.Add(this.btnYeniFilmEkle);
             this.Controls.Add(this.btnRezervasyonYap);
@@ -193,6 +194,7 @@ namespace SinemaOtomasyonForm
             this.Name = "frmGenel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "360MEKA | Sinema Otomasyonu";
+            this.Load += new System.EventHandler(this.frmGenel_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,7 +211,7 @@ namespace SinemaOtomasyonForm
         private System.Windows.Forms.Button btnRezervasyonYap;
         private System.Windows.Forms.Button btnYeniFilmEkle;
         private System.Windows.Forms.Button btnCikisYap;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnYeniSalonEkle;
     }
 }
 

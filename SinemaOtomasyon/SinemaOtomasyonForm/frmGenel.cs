@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace SinemaOtomasyonForm
         Baglanti baglanti = new Baglanti();
         public frmGenel()
         {
+            
             InitializeComponent();
         }
 
@@ -27,6 +29,19 @@ namespace SinemaOtomasyonForm
             }
         }
 
+        void ComboboxDataGetList(string sql, ComboBox cmb)
+        {
+            cmb.Items.Clear();
+            baglanti.BaglantiKur();
+            SqlCommand cmd = new SqlCommand(sql, baglanti.sqlConnection);
+            SqlDataReader read = cmd.ExecuteReader();
+            while(read.Read())
+            {
+                cmb.Items.Add(read[1].ToString());
+            }
+            baglanti.sqlConnection.Close();
+        }
+
         private void btnYeniFilmEkle_Click(object sender, EventArgs e)
         {
             frmFilmler filmler = new frmFilmler();
@@ -35,7 +50,19 @@ namespace SinemaOtomasyonForm
 
         private void btnRezervasyonYap_Click(object sender, EventArgs e)
         {
-            baglanti.BaglantiKur();
+
+        }
+
+        private void frmGenel_Load(object sender, EventArgs e)
+        {
+            ComboboxDataGetList("SELECT * FROM Filmler", cbFilm);
+            ComboboxDataGetList("SELECT * FROM Salonlar", cbSalon);
+        }
+
+        private void btnYeniSalonEkle_Click(object sender, EventArgs e)
+        {
+            frmSalonlar salonlar = new frmSalonlar();
+            salonlar.ShowDialog();
         }
     }
 }

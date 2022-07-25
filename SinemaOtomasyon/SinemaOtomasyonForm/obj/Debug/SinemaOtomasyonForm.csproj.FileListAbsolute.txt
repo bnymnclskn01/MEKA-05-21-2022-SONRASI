@@ -50,3 +50,4 @@ C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\SinemaOtomasyon\SinemaOtoma
 C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\SinemaOtomasyon\SinemaOtomasyonForm\obj\Debug\SinemaOtomasyonForm.exe
 C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\SinemaOtomasyon\SinemaOtomasyonForm\obj\Debug\SinemaOtomasyonForm.pdb
 C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\SinemaOtomasyon\SinemaOtomasyonForm\obj\Debug\SinemaOtomasyonForm.frmFilmler.resources
+C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\SinemaOtomasyon\SinemaOtomasyonForm\obj\Debug\SinemaOtomasyonForm.frmSalonlar.resources

@@ -11,20 +11,20 @@ using System.Windows.Forms;
 
 namespace SinemaOtomasyonForm
 {
-    public partial class frmFilmler : Form
+    public partial class frmSalonlar : Form
     {
         Baglanti baglanti = new Baglanti();
-        public frmFilmler()
+        public frmSalonlar()
         {
             InitializeComponent();
         }
 
         private void btnSayfaKapat_Click(object sender, EventArgs e)
         {
-            if (txtFilmAdi.Text != "" || txtFilmTuru.Text != "" ||   txtYonetmen.Text != "" ||  txtAciklama.Text != "")
+            if (txtKoltukSayisi.Text != "" || txtSalonAdi.Text != "")
             {
                 DialogResult Mesaj = MessageBox.Show("Sayfadan çıkış yapmak istediğinize emin misiniz?", "Bilgilendirme Mesajı", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-                if (Mesaj==DialogResult.Yes)
+                if (Mesaj == DialogResult.Yes)
                 {
                     this.Close();
                 }
@@ -40,12 +40,9 @@ namespace SinemaOtomasyonForm
             DialogResult Mesaj = MessageBox.Show("Sayfada girdiğiniz verileri temizlemek istediğinize emin misiniz?", "Bilgilendirme Mesajı", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (Mesaj == DialogResult.Yes)
             {
-                txtAciklama.Clear();
-                txtFilmAdi.Clear();
-                txtFilmTuru.Clear();
-                txtYonetmen.Clear();
+                txtKoltukSayisi.Clear();
+                txtSalonAdi.Clear();
             }
-
         }
 
         private void btnYeniEkle_Click(object sender, EventArgs e)
@@ -54,19 +51,15 @@ namespace SinemaOtomasyonForm
             if (Mesaj == DialogResult.Yes)
             {
                 baglanti.BaglantiKur();
-                SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "INSERT INTO Filmler(Film_Adi,Yonetmen,Film_Tur,Film_Aciklama) VALUES('" + txtFilmAdi.Text + "','" + txtYonetmen.Text + "','" + txtFilmTuru.Text + "','" + txtAciklama.Text + "')";
-                cmd.Connection = baglanti.sqlConnection;
+                SqlCommand cmd = new SqlCommand("INSERT INTO Salonlar (Salon_Adi,Koltuk_Sayisi) values('" + txtSalonAdi.Text + "'," + txtKoltukSayisi.Text + ")", baglanti.sqlConnection);
                 cmd.ExecuteNonQuery();
-                baglanti.sqlConnection.Close();
-                MessageBox.Show("İstediğiniz film kayıdı = "+txtFilmAdi.Text+" "+" kayıt başarıyla eklenmiştir.", "Bilgilendirme Mesajı", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtAciklama.Clear();
-                txtFilmAdi.Clear();
-                txtFilmTuru.Clear();
-                txtYonetmen.Clear();
+                MessageBox.Show("İstediğiniz salon kayıdı = " + txtSalonAdi.Text + " " + " kayıt başarıyla eklenmiştir.", "Bilgilendirme Mesajı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtKoltukSayisi.Clear();
+                txtSalonAdi.Clear();
             }
             else
             {
+
             }
         }
     }
