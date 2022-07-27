@@ -45,22 +45,61 @@ namespace SinemaOtomasyonForm
             }
         }
 
-        private void btnYeniEkle_Click(object sender, EventArgs e)
+        bool durum;
+        void tekrar()
         {
-            DialogResult Mesaj = MessageBox.Show("Yeni Kayıt Oluşturmak İstiyor Musunuz ?", "Bilgi Mesajı", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (Mesaj == DialogResult.Yes)
+            baglanti.BaglantiKur();
+            SqlCommand cmd = new SqlCommand("Select * from Salonlar where Salon_Adi = @p1", baglanti.sqlConnection);
+            cmd.Parameters.AddWithValue("@p1", txtSalonAdi.Text);
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
             {
-                baglanti.BaglantiKur();
-                SqlCommand cmd = new SqlCommand("INSERT INTO Salonlar (Salon_Adi,Koltuk_Sayisi) values('" + txtSalonAdi.Text + "'," + txtKoltukSayisi.Text + ")", baglanti.sqlConnection);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("İstediğiniz salon kayıdı = " + txtSalonAdi.Text + " " + " kayıt başarıyla eklenmiştir.", "Bilgilendirme Mesajı", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtKoltukSayisi.Clear();
-                txtSalonAdi.Clear();
+                durum = false;
             }
             else
             {
+                durum = true;
+            }
+            baglanti.sqlConnection.Close();
+        }
+
+        
+        private void btnYeniEkle_Click(object sender, EventArgs e)
+        {
+            
+            DialogResult Mesaj = MessageBox.Show("Yeni Kayıt Oluşturmak İstiyor Musunuz ?", "Bilgi Mesajı", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (txtSalonAdi.Text == "" || txtKoltukSayisi.Text == "") { MessageBox.Show("Boş bırakılamaz !"); }
+            else
+            {
+
+
+                tekrar();
+                if (durum == true)
+                {
+
+                    if (Mesaj == DialogResult.Yes)
+                    {
+                        baglanti.BaglantiKur();
+                        SqlCommand cmd = new SqlCommand("INSERT INTO Salonlar (Salon_Adi,Koltuk_Sayisi) values('" + txtSalonAdi.Text + "'," + txtKoltukSayisi.Text + ")", baglanti.sqlConnection);
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("İstediğiniz salon kayıdı = " + txtSalonAdi.Text + " " + " kayıt başarıyla eklenmiştir.", "Bilgilendirme Mesajı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        txtKoltukSayisi.Clear();
+                        txtSalonAdi.Clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Boş bırakılamaz !");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Eklemek istediğiniz salon zaten var !");
+                }
 
             }
-        }
-    }
+
+
+
+    } }
 }
