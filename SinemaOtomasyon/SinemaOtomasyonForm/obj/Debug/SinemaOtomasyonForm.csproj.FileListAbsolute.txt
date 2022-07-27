@@ -99,3 +99,4 @@ C:\Users\Hasan\Desktop\MEKA-05-21-2022-SONRASI-main\SinemaOtomasyon\SinemaOtomas
 C:\Users\Hasan\Desktop\MEKA-05-21-2022-SONRASI-main\SinemaOtomasyon\SinemaOtomasyonForm\obj\Debug\SinemaOtomasyonForm.csproj.CopyComplete
 C:\Users\Hasan\Desktop\MEKA-05-21-2022-SONRASI-main\SinemaOtomasyon\SinemaOtomasyonForm\obj\Debug\SinemaOtomasyonForm.exe
 C:\Users\Hasan\Desktop\MEKA-05-21-2022-SONRASI-main\SinemaOtomasyon\SinemaOtomasyonForm\obj\Debug\SinemaOtomasyonForm.pdb
+C:\Users\PC\Documents\GitHub\MEKA-05-21-2022-SONRASI\SinemaOtomasyon\SinemaOtomasyonForm\obj\Debug\SinemaOtomasyonForm.frmRezervasyon.resources

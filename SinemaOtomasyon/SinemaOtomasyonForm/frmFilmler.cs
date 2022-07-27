@@ -92,10 +92,6 @@ namespace SinemaOtomasyonForm
                         txtFilmTuru.Clear();
                         txtYonetmen.Clear();
                     }
-                    else
-                    {
-                    }
-                    
                 }
                 else { MessageBox.Show("Eklemek istediğiniz film zaten mevcut !"); }
             }

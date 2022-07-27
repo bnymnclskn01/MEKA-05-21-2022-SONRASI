@@ -67,6 +67,12 @@
     <Compile Include="frmGenel.Designer.cs">
       <DependentUpon>frmGenel.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRezervasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRezervasyon.Designer.cs">
+      <DependentUpon>frmRezervasyon.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSalonlar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGenel.resx">
       <DependentUpon>frmGenel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRezervasyon.resx">
+      <DependentUpon>frmRezervasyon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSalonlar.resx">
       <DependentUpon>frmSalonlar.cs</DependentUpon>

@@ -50,7 +50,15 @@ namespace SinemaOtomasyonForm
 
         private void btnRezervasyonYap_Click(object sender, EventArgs e)
         {
-
+            if (cbFilm.SelectedIndex != -1 && cbSalon.SelectedIndex != -1 && cbSeans.SelectedIndex != -1)
+            {
+                frmRezervasyon rezervasyon = new frmRezervasyon();
+                rezervasyon.film_Adi = cbFilm.Text;
+                rezervasyon.salon_Adi = cbSalon.Text;
+                rezervasyon.seans = cbSeans.Text;
+                rezervasyon.Show();
+                this.Hide();
+            }
         }
 
         private void frmGenel_Load(object sender, EventArgs e)
