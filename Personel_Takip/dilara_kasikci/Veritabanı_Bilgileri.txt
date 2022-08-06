@@ -1,0 +1,4 @@
+Sunucu Adı: 89.252.181.210\MSSQLSERVER2014
+Veritabanı Adı : mekacom_DilaraKasikci
+Veritabanı Kullanıcı Adı : mekacom_DilaraKasikci
+Veritabanı Kullanıcı Şifre: u77s!cX16

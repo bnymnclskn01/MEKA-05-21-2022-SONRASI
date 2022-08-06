@@ -1,0 +1,4 @@
+Sunucu Adı: 89.252.181.210\MSSQLSERVER2014
+Veritabanı Adı : mekacom_OmerFarukPolat
+Veritabanı Kullanıcı Adı : mekacom_OmerFarukPolat
+Veritabanı Kullanıcı Şifre: R177mcg$3
