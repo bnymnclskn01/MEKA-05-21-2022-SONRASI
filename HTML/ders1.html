@@ -3,6 +3,7 @@
 <head>
 <title>Ders - 1</title>
 </head>
+<!--Head Baş demek-->
 <body>
 	<h1>Lorem Ipsum Nedir?</h1>
 	<h2>Lorem Ipsum Nedir?</h2>
@@ -24,11 +25,58 @@
 		<li>Veli</li>
 	</ol>
 	<a href="https://www.google.com.tr" target="_blank">Google Tarayıcısını Aç</a>
-	<p><b>Lorem Ipsum</b>, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.<br/>
+	<p><strong>Lorem Ipsum</strong>, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.<br/>
 	alkkşajlfşkjladsşfkasdşkf</p>
 	<hr/>
 	<p>klşsdkşfkjşsldfşkasdşalösd</p>
+	<br>
+		<form>
+		<input type="text" required placeholder="Lütfen boş alan bırakmayınız" name="">
+		<input type="tel" maxlength="11" required placeholder="Lütfen boş alan bırakmayınız" name="">
+		<select class="form-control">
+			<option>Chrome</option>
+			<option>Opera</option>
+			<option>Safari</option>
+			<option>Opera GX</option>
+			<option>Internet Explorer</option>
+		</select>
+		<input type="submit">
+	</form>
+	<br>
+	<img src="https://www.guzel.net.tr/templates/guzelv3/images/logo.png" width="250"><br>
+	<div style="text-align: center;">
+	<button onclick="playPause()">Oynat/Durdur</button>
+	<button onclick="makeBig()">Büyük</button>
+	<button onclick="makeSmall()">Küçük</button>
+	<button onclick="makeNormal()">Normal</button>
+    </div>
+    <br>
+	<video id="video1" width="560" style="text-align:center;">
+		<source src="video.mp4" type="video/mp4">
+		
+	</video>
+	<br>
+
 </body>
+<script type="text/javascript">
+	var myVideo=document.getElementById("video1")
+	function playPause()
+	{ 
+		if (myVideo.paused) 
+  			myVideo.play(); 
+		else 
+  		myVideo.pause(); 
+	}
+	function makeBig() {
+	 	myVideo.width=750;
+	 }
+	function makeSmall() {
+	 	myVideo.width=350;
+	 }
+	function makeNormal() {
+	 	myVideo.width=560;
+	 }  
+</script>
 </html>
 <!--
 HTML bir programlama dili değildir.
