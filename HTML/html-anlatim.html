@@ -1,0 +1,100 @@
+<!-- 
+HTML bir programlama dili değildir.
+Hyper Text Markup Language (Web sayfaları için kullanılan standart işaretleme dilidir.)
+ -->
+<!-- Dosya Tipi Belirlemek için kullanılır. -->
+<!--
+Tip belirleme
+-->
+<!DOCTYPE html>
+<!-- 
+<html></html>
+public void topla()
+{
+	int a=0, b=0;
+	a+=b;
+}
+ -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		label{
+			display: block;
+            padding: 5px;
+		}
+        label:hover{
+            color: darkgoldenrod;
+        }
+        input{
+            border: 3px solid darkblue;
+            padding: 5px;
+        }
+        input:hover{
+            border: 3px solid darkred;
+
+        }
+		table, td{
+			border: 1px solid darkblue;
+            padding: 5px;
+		}
+        table, td, tr{
+            padding: 5px;
+            border-width: 20px;
+        }
+        button{
+            background-color: darkred;
+            color: white;
+            padding: 5px;
+        }
+        button:hover{
+            background-color: darkslateblue;
+            color: white;
+
+        }
+	</style>
+</head>
+<body>
+<label>Satır Sayısı</label>
+<input type="text" id="satir">
+<label>Sütun Sayısı</label>
+<input type="text" id="sutun">
+<label><button id="olustur">Oluştur</button></label>
+<div id="goster"></div>
+<table>
+<tr>
+<th>Adı Soyadı</th>
+<th>Yaşı</th>
+<th>Yaşadığı Şehir</th> 
+</tr>
+<tr>
+<td>Oğuzhan Sucuoğlu</td>
+<td>20</td>
+<td>Bartın</td>
+</tr>
+</table>
+<script>
+var olustur= document.getElementById("olustur");
+    olustur.onclick=function(){
+    var sayac=1;
+    var satir=document.getElementById("satir").value;
+    var sutun=document.getElementById("sutun").value;
+                
+    var table=document.createElement("table");
+    for(var i=0;i<satir;i++){
+        var tr=document.createElement("tr");
+        table.appendChild(tr);
+        for(var j=0;j<sutun;j++){
+            var td=document.createElement("td");
+            td.innerHTML=sayac++;
+            tr.appendChild(td);
+            }  
+        }
+    document.getElementById("goster").innerHTML="";
+    document.getElementById("goster").appendChild(table);
+    }
+</script>
+</body>
+</html>
