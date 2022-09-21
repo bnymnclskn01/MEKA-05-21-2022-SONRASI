@@ -83,6 +83,7 @@ body{
 	text-align: center;
     border-bottom: 1px dotted black;
     box-shadow: 10px 10px 10px black;
+    background-color: white;
 }
 .orta-sag p{
 	text-align: justify;
