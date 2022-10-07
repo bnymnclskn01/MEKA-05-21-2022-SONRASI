@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS-3</title>
+</head>
+<body>
+<input type="text" id="sayi" placeholder="Sayı Giriniz">
+<input type="button" value="Hesapla" id="hesapla">
+<script>
+function hesapla() 
+{
+	var faktor=1;
+	var sayi=document.getElementById("sayi").value;
+	sayi=Number(sayi);	
+	if (sayi>0) 
+	{
+		for(var i=1; i<sayi; i++)
+		{
+			faktor=faktor*i;
+		}
+		alert(sayi+" sayinin faktöryeli "+faktor);
+	}
+}
+var hesapBtn = document.getElementById("hesapla");
+hesapBtn.onclick=hesapla;	
+</script>
+</body>
+</html>

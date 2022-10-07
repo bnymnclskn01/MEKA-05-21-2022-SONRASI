@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS-4 Örneği</title>
+</head>
+<body>
+<script>
+	var sayilar =new Array(20);
+	var min, mak;
+	for (var i = 0; i< sayilar.length; i++) 
+	{
+		sayilar[i]=Math.floor(Math.random()*100);
+	}
+	min=sayilar[0];
+	mak=sayilar[0];
+	for (var i = 0; i < sayilar.length; i++) 
+	{
+		if (min>sayilar[i]) {
+			min=sayilar[i];
+		}
+		if (mak<sayilar[i]) {
+			mak=sayilar[i]
+		}
+	}
+	document.write("=================================="+"<br/>");
+	for (var i = 0; i < sayilar.length; i++) {
+		document.write(sayilar[i]+"<br/>");
+	}
+	document.write("=================================="+"<br/>");
+	document.write("dizinin içindeki en büyük sayı : "+mak+"<br/>");
+	document.write("dizinin içindeki en küçük sayı : "+min+"<br/>");
+</script>
+</body>
+</html>

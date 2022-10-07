@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS - 2 Örneği</title>
+</head>
+<body>
+	<p><b>Bitiş Sayısı : </b><input type="text" id="sayi1"><p>
+	<br/>
+	<input type="button" value="Hesapla" onclick="asalHesapla()" />
+	<br/>
+	<p id="demo"></p>
+<script>
+	var text="";
+	var sayi=0;
+	function asalHesapla ()
+	{
+		var sayac = 0;
+		sayi = document.getElementById("sayi1").value;
+		for (var i = 2; i < sayi; i++) 
+		{
+			if (sayi %i== 0)
+				sayac++;
+		}
+		if (sayac == 0)
+			text = "Sayı Asaldır";
+		else
+			text = "Sayı Asal değildir";
+		document.getElementById("demo").innerHTML = text;
+	}
+
+</script>
+</body>
+</html>

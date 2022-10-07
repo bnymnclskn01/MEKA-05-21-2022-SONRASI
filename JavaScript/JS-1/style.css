@@ -1,0 +1,31 @@
+body{
+	background: darkgoldenrod;
+	align-items: center;
+}
+input{
+	border-radius: 5px;
+	border-color: darkgray;
+	width: 150px;
+	color: darkred;
+}
+input:hover{
+	border-color: darkred;
+	width: 200px;
+}
+#btn{
+	width: 70px;
+	height: 25px;
+	background-color: darkkhaki;
+	color: white;
+}
+#btn:hover{
+	background-color: darkmagenta;
+}
+h2{
+	text-align: center;
+}
+#sonuc{
+	color: darkgreen;
+	font-size: 30px;
+	font-style: bold;
+}
