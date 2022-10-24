@@ -124,12 +124,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Entity\About.cs" />
-    <Compile Include="Models\Entity\ContactForm.cs" />
-    <Compile Include="Models\Entity\ContactInformation.cs" />
-    <Compile Include="Models\Entity\Service.cs" />
-    <Compile Include="Models\Entity\Slider.cs" />
-    <Compile Include="Models\Interface\BasicEntity.cs" />
+    <Compile Include="Models\Inheritance\BasicEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -171,7 +166,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\Model\" />
+    <Folder Include="Models\DBModel\" />
+    <Folder Include="Models\MsSqlEntity\" />
+    <Folder Include="Models\MySqlEntity\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
